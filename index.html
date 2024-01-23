@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div id="drop-area">
+          <img src="./uploadIcon.svg" alt="" />
+          <p class="drag-text">
+            Drag & drop photo here, or <a href="#"><span>browse</span></a>
+          </p>
+          <small>Supports: JPG, JPEG, PNG, HEIC and GIF files</small>
+          <input style="display: none" type="file" id="file-input" accept=".jpg, .jpeg, .png, .heic, .gif" multiple />
+        </div>
+      </section>
+      <section>
+        <div id="uploaded-area">
+          <div class="uploaded-area-head">
+            <p id="counting_text">Uploading 0 photo(s) left</p>
+            <button class="upload-more-btn">Upload more</button>
+          </div>
+          <div id="uploaded-images"></div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
